@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
     "preview": "vite preview",
+    "format": "prettier --write .",
+    "pretty": "yarn lint && yarn format",
     "prepare": "husky"
   },
   "dependencies": {
